@@ -117,30 +117,30 @@ footer {
   }
 }
 
-/* Floating Buttons */
 .floating-buttons {
   position: fixed;
-  right: 1rem;
-  bottom: 1rem;
+  bottom: 20px;
+  right: 15px;
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
-  z-index: 9999;
+  gap: 10px;
+  z-index: 999;
 }
-.floating-buttons a {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  padding: 0.6rem 0.9rem;
-  background: #0b4db8;
-  color: #fff;
-  border-radius: 999px;
+
+.call-btn, .msg-btn {
+  padding: 12px 16px;
+  border-radius: 30px;
+  color: white;
   text-decoration: none;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-  font-weight: 600;
+  font-weight: bold;
+  font-size: 14px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
-.floating-buttons .call-btn { background: #28a745; }
-.floating-buttons .msg-btn { background: #0b4db8; }
-.floating-buttons a:focus { outline: 3px solid #fff; outline-offset: 3px; box-shadow: 0 0 0 4px rgba(11,77,184,0.15); }
-@media (min-width: 768px) { .floating-buttons { right: 2rem; bottom: 2rem; } }
-@media (max-width: 420px) { .floating-buttons a { padding: 0.5rem 0.75rem; font-size: 14px; } }
+
+.call-btn {
+  background: #28a745;
+}
+
+.msg-btn {
+  background: #0078ff;
+}
